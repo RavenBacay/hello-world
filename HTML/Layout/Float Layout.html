@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prova Float Layout</title>
+    </head>
+    
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            header{
+                background-color: #666;
+                padding: 30px;
+                text-align: center;
+                font-size:35px;
+                color:white;
+            }
+
+            nav {
+                float:left;
+                width: 30%;
+                height:300px;
+                background: #ccc;
+                padding: 20px;
+            }
+            nav ul{
+                list-style-type: none;
+                padding: 0;
+            }
+            article{
+                float: left;
+                padding:20px;
+                width: 70%;
+                background-color: #f1f1f1;
+                height: 300px;
+            }
+            section::after{
+                content: "";
+                display:table;
+                clear: both;
+            }
+            footer{
+                background-color: #777;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+            @media (max-width:600px) {
+                nav, article {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
+        <body>
+    <header>
+        <h2>Mistborn</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#https://mistborn.fandom.com/wiki/Mistborn:_The_Final_Empire">The final Empire</a></li>
+                <li><a href="#https://mistborn.fandom.com/wiki/Mistborn:_The_Well_of_Ascension">The Well of Ascension</a></li>
+                <li><a href="#https://mistborn.fandom.com/wiki/Mistborn:_The_Hero_of_Ages">The Hero of Ages</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>Allomancy</h1>
+            <p>Allomancy is one of the three magic systems in the Mistborn fantasy novel trilogy, and is the most prominent. People capable of Allomancy are known as Allomancers. Allomancers have the ability to "burn" (or use) metals, in order to fuel a variety of physical and mental enhancements and abilities. For an additional burst of power, they may flare, or burn their metal especially quickly, consuming it at an accelerated rate, but gaining greater benefits in return. A person who can only burn one metal is known as a Misting. If a person is born with the ability to burn more than one metal, they can burn all Allomantic metals, and are known as Mistborn.</p>
+        </article>
+    </section>
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>

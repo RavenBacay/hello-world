@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prova Class Attribute con javascript</title>
+    </head>
+    <body>
+        <h1>Capitale e capoluoghi d'Italia</h1>
+        <button onclick="myFunction()">Nascondi le città</button>
+        <h2 class="city">Roma</h2>
+        <p>Roma è il capoluogo della Lazio e capitale d'Italia</p>
+        <h2 class="city">Bologna</h2>
+        <p>Bologna è il capoluogo dell'Emilia-Romagna</p>
+        <h2 class="city">Milano</h2>
+        <p>Milano è il capoluogo della Lombardia</p>
+        <script>
+            function myFunction(){
+                var x = document.getElementsByClassName("city");
+                for(var i=0; i<x.length; i++){
+                    x[i].style.display="none";
+                }
+            }
+        </script>
+    </body>
+</html>
