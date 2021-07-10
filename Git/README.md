@@ -6,3 +6,4 @@ Tis tutrial focuses mainly on Git and using GitHub as its remote.
 This repositry is built step by step in the tutorial.
 
 It now includes steps for GitHub
+Everystep done is copied fro w3school
