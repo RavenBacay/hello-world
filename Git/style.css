@@ -1,0 +1,11 @@
+body{
+    background-image: url('/HTML/Immag/Immagine Mistborn.jpg');
+    background-repat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    color: black;
+    margin-left: 20px;
+}
